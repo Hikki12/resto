@@ -7,6 +7,7 @@
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
+/* General styles */
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -22,6 +23,40 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
+}
+
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover {
+    background: var(--green);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: var(--green);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--green);
 }
 
 /* Header styles */
@@ -155,6 +190,44 @@ header .icons #menu-bars {
     font-size: 5rem;
 }
 
+/* Home section */
+.home {
+    padding-top: 10rem;
+}
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+    width: 100%;
+}
+
+.home .home-slider .slide .content span {
+    color: var(--green);
+    font-size: 2.5rem;   
+}
+
+.home .home-slider .slide .content h3 {
+    color: var(--black);
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p {
+    color: var(--light-color);
+    font-size: 2rem;   
+}
+
 /* Media Queries */
 @media (min-width: 991px){
     html {
@@ -197,6 +270,10 @@ header .icons #menu-bars {
     #search-form #search-box {
         width: 90%;
         margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3 {
+        font-size: 5rem;
     }
 }
 

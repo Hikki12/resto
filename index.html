@@ -7,6 +7,11 @@
     <title>Resto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
 </head>
 <body>
 
@@ -35,10 +40,53 @@
     </form>
 
     <main>
-        <div></div>
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Our special dish</span>
+                            <h3>Spicy noodles</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sociis natoque penat.</p>
+                            <a href="#" class="btn">Order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./images/home-img-1.png"  alt="home-dish-1"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Our special dish</span>
+                            <h3>Fried Chick</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sociis natoque penat.</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./images/home-img-2.png"  alt="home-dish-2"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Our special dish</span>
+                            <h3>Hot Pizza</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sociis natoque penat.</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                        <div class="image">
+                            <img src="./images/home-img-3.png"  alt="home-dish-3"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
+        </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="./js/main.js"></script>
 </body>
 </html>
