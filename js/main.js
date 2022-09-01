@@ -27,6 +27,11 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
   
     // If we need pagination
     pagination: {
